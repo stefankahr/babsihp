@@ -5,9 +5,9 @@
     <meta charset="utf-8">
     <link rel="icon" href="img/favicon.ico" type="image/x-icon">
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
-    <meta name="description" content="Your description">
-    <meta name="keywords" content="Your keywords">
-    <meta name="author" content="Your name">
+    <meta name="description" content="Barbara Kahr ist Klinische- und Gesundheitspsychologin ">
+    <meta name="keywords" content="kinder, jugendliche, erwachsene, psychologie">
+    <meta name="author" content="Barbara Kahr">
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/responsive.css">
     <link rel="stylesheet" href="css/style.css">
@@ -24,6 +24,14 @@
         <script src="js/jquery.ui.totop.js"></script>
         <script>
 			function goToByScroll(id){$('html,body').animate({scrollTop: $("#"+id).offset().top},'slow');}
+      function showHide(currentElem) {
+        if (document.getElementById(currentElem).style.display=='none') {
+            // This means its open, now close it
+          document.getElementById(currentElem).style.display='block';
+        } else {
+            document.getElementById(currentElem).style.display='none';  
+        }
+    }
 		</script>
     <!--[if lt IE 8]>
         <div style='text-align:center'><a href="http://www.microsoft.com/windows/internet-explorer/default.aspx?ocid=ie6_countdown_bannercode"><img src="http://www.theie6countdown.com/img/upgrade.jpg"border="0"alt=""/></a></div>  
@@ -40,7 +48,7 @@
     <div class="container">
       <div class="row">
           <div class="span12 header-block">
-              <h1 class="brand"><a href="index.html"><span>Mag. Barbara Kahr</span><strong>Klinische und Gesundheitspsychologin</strong></a></h1> 
+              <h1 class="brand"><a href="index.html"><span>Mag. Barbara Kahr</span><strong>Klinische- und Gesundheitspsychologin</strong></a></h1> 
               <div class="navbar navbar_ clearfix">
                 <div class="navbar-inner">                                                 
                   <div class="nav-collapse nav-collapse_ collapse">
@@ -110,20 +118,38 @@
                     Die Arbeit mit Kindern macht mir besonders viel Spaß, da Fortschritte sehr schnell sichtbar werden<br>
                     und Kinder schnell von etwas begeistert sind. Eine vertrauensvolle und wertschätzende, psychologische Beziehung<br>
                     ist dabei sehr wichtig. Therapeutische Spiele, Zeichnungen und Gespräche sind nur einige Methoden, die ich verwende.<br>
-                    Auch Sie als Eltern binde ich, wenn möglich, gerne in die psychologische Behandlung mit ein, damit Sie ihr Kind unterstützen können<br>Behandlungsthemen im Alltag umzusetzen.<div class="text">dfhjgdhjfghjdsghjdsgfjhdshjfghjdsgjhds</div>
-                    <a href="#" class="link">mehr</a>
+                    <div id="kindertext" class="open" style="display: none;margin-left:300px" onclick="showHide();">
+                        Auch Sie als Eltern binde ich, wenn möglich, gerne in die psychologische Behandlung mit ein, damit Sie ihr Kind unterstützen können Behandlungsthemen im Alltag umzusetzen.<br><br>
+                      Häufige Themen im Kindesalter: <br>
+                      <ul>  
+                        <li>• Schwierigkeiten im Säuglings- und Kleinkindalter <br>
+                        • Schrei- und Schlafprobleme<br>
+                        • Einnässen, Einkoten<br>
+                        • Wut, Trotzphasen<br>
+                        • Geschwisterrivalität <br>
+                        • Schwierigkeiten im gemeinsamen Familienleben <br>
+                        • Schwierigkeiten im Kindergarten / in der Schule <br>
+                        • Schulangst /Verweigerung <br>
+                        • Trennungsängste <br>
+                        • Verschiedenste Kinderängste <br>
+                        • Trennung der Eltern <br>
+                        • Kinder aus schwierigen Familiensituationen </li>
+                        </ul>  
+                    </div>
+                    
+                    <a  href="javascript:showHide('kindertext');" class="link">mehr</a>
                  </li>
                 <li class="block-6">
                     <img src="img/page3-img2.jpg" alt="">
                     <span class="lead">Für Jugendliche</span><br>
                     Oft ist es für Jugendliche nicht einfach all den Anforderungen, die an sie gestellt werden, gerecht zu werden. <br>Orientierungslosigkeit, Überforderung, emotionale Probleme sind nur einige Missstimmungen, die häufig bei Teenagern auftreten. Durch <br>meine langjährige Arbeit im Jugendwohlfahrtsbereich bin ich mit den verschiedensten Problematiken vertraut geworden und weiß auch, <br>dass es Jugendlichen oft sehr schwer fällt, sich bei einer fremden Person zu öffnen und über Probleme zu reden. Manchmal ist es <br>hilfreich, wenn wir den Beratungsraum verlassen und an einem anderen Ort Gespräche führen wie zum Beispiel bei einem Spaziergang <br>oder im Park. Auch kreative Methoden, wie malen , basteln oder zeichnen, helfen Jugendliche oft bei der Bearbeitung ihrer Sorgen<br>
-                    <a href="#" class="link">mehr</a>
+                    <a href="javascript:showHide('jugendlichetext');"  class="link">mehr</a>
                  </li>
                  <li class="block-6">
                     <img src="img/page3-img3.jpg" alt="">
                     <a name="familien"><span class="lead">Für Familien und Eltern</span><br></a>
                     Wenn es einem Familienmitglied nicht gut geht, leidet meistens die gesamte Familie darunter. Deshalb ist es wichtig, frühzeitig professionelle Beratung in Anspruch zu nehmen, um diesen Kreislauf zu unterbrechen. In der Elternberatung genügen oft wenige Gespräche um eigene Ressourcen und Stärken als Eltern wieder zu finden und um die positiven Seiten des Kindes neu zu entdecken<br>
-                    <a href="#" class="link">mehr</a>
+                    <a href="javascript:showHide('familientext');"  class="link">mehr</a>
                  </li> 
                  <li class="block-6">
                     <img src="img/page3-img3.jpg" alt="">
@@ -131,7 +157,7 @@
                     Manchmal kommt man in seinem Leben in schwierige Lebenssituationen, in denen einem selbst die Familie und Freunde einfach nicht mehr weiter helfen können. 
                     In solchen Lebenslagen ist es hilfreich, sich professionell unterstützen zu lassen, um wieder Lebensqualität und persönliches Wohlbefinden zu erlangen. Man entdeckt dadurch meistens bei sich selbst neue Denkweisen und Fähigkeiten, welche wieder Kraft und Zuversicht geben.
                     <br>
-                    <a href="#" class="link">mehr</a>
+                    <a href="javascript:showHide('erwachsenetext');"  class="link">mehr</a>
                  </li> 
                   <li class="block-6">
                     <img src="img/page3-img3.jpg" alt="">
@@ -140,7 +166,7 @@
 
                     Eine kurze Information, für die Unterstützung von Kindern in Trennungssituationen, können Sie auch jetzt schon downloaden
                    <br>
-                    <a href="#" class="link">mehr</a>
+                    <a href="javascript:showHide('beratungtext');"  class="link">mehr</a>
                  </li> 
                  <li class="block-6">
                     <img src="img/page3-img3.jpg" alt="">
@@ -150,7 +176,7 @@
                     Anmeldungen bitte bei Mag. Barbara Kahr oder im Eltern Kind Zentrum Köflach 
 
                      <br>
-                    <a href="#" class="link">mehr</a>
+                    <a href="javascript:showHide('vortragtext');"  class="link">mehr</a>
                  </li> 
              </ul>  
           </div> 
@@ -217,4 +243,4 @@
  </footer>
 <script src="js/bootstrap.js"></script>
 </body>
-</html>
+</html> 
